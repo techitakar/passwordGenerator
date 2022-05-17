@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="result-container">
+            <span id="result"></span>
+            <button class="btn" id="clipboard">
+                <i class="bi bi-clipboard"></i>
+            </button>
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label for="length">Password Lenth</label>
+                <input type="number" id="length" min="4" max="20" value="9">
+            </div>
+            <div class="setting">
+                <label for="uppercase">Include Uppercase Letters</label>
+                <input type="checkbox" id="uppercase" checked>
+            </div>
+            <div class="setting">
+                <label for="lowercase">Include Lowercase letters</label>
+                <input type="checkbox" id="lowercase" checked>
+            </div>
+            <div class="setting">
+                <label for="lowercase">Include Numbers</label>
+                <input type="checkbox" id="numbers" checked>
+            </div>
+            <div class="setting">
+                <label for="lowercase">Include Symbols</label>
+                <input type="checkbox" id="symbols" checked>
+            </div>
+        </div>
+        <button class="btn btn-large" id="generate">
+            Generate Password
+        </button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
